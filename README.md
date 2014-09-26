@@ -4,7 +4,7 @@ telegram-robot
 A programmable robot for the telegram CLI
 * Download & build telegram CLI here: https://github.com/vysheng/tg
 * Create a file env.lua (in the current directory) containing "me = 'Name_Of_Current_Robot'"
-* Run with "telegram -s robo.lua"
+* Run with "./bin/telegram-cli -s robo.lua"
 
 Send messages to Robo over telegram.
 * "Robo help" to get a current status 

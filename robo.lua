@@ -41,7 +41,7 @@ function reply(msg, text)
     destination = msg.to.print_name
   end
   print ('sending: ' .. text .. ' to: ' .. tostring(destination))
-  send_msg(destination, text)
+  send_msg(destination, text, ok_cb, false)
 end
 
 function append_recipe_book(msg, url)
@@ -90,7 +90,7 @@ function on_msg_receive (msg)
   end
 end
 
-function on_secret_chat_created (peer)
+function on_secret_chat_update (user, what_changed)
 end
 
 function on_user_update (user)
@@ -100,4 +100,13 @@ function on_chat_update (user)
 end
 
 function on_get_difference_end ()
+end
+
+function on_binlog_replay_end ()
+end
+
+function on_our_id(our_id)
+end
+
+function ok_cb(extra, success, result)
 end
